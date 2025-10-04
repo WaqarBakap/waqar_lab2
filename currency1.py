@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 tree = ET.parse("currency.xml")
 root = tree.getroot()
 
-# Step 2: Empty lists
+
 names = []
 values = []
 

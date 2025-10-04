@@ -5,7 +5,7 @@ file = open("books-en.csv", encoding="latin-1")
 reader = csv.DictReader(file, delimiter=";")
 
 
-publishers = set()   # unique values
+publishers = set()  
 for row in reader:
     publishers.add(row["Publisher"])
 

@@ -8,10 +8,10 @@ reader = csv.DictReader(file, delimiter=";")
 
 books = list(reader)
 
-# pick 20 random books
+
 sample_books = random.sample(books, 20)
 
-# open a new text file to save results
+
 with open("bibliography.txt", "w", encoding="utf-8") as out:
     for i, row in enumerate(sample_books, start=1):
         author = row["Book-Author"]
